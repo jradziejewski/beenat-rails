@@ -1,0 +1,17 @@
+<h1>Edit Artist</h1>
+<ul>
+  <li>
+    <strong>
+      Current name:
+    </strong>
+    <%= @artist.name %>
+  </li>
+  <li>
+    <strong>
+      Current country:
+    </strong>
+    <%= @artist.country %>
+  </li>
+</ul>
+
+<%= render "form", artist: @artist %>

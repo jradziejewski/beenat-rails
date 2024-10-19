@@ -7,3 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Artist.find_or_create_by!(name: "Queen", country: "England")
+Artist.find_or_create_by!(name: "Black Sabbath", country: "England")
+Artist.find_or_create_by!(name: "Iron Maiden", country: "England")
