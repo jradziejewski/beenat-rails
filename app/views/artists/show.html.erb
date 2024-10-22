@@ -8,4 +8,25 @@
   </li>
 </ul>
 
+<h2>Upcoming shows</h2>
+<ul>
+  <% if @shows.empty? %>
+  <li>
+    Nothing here yet!
+  </li>
+  <% else %>
+    <% @shows.each do |show| %>
+      <li>
+        <%= @artist.name.upcase %> @ <%= show.city %>, <%= show.venue %> | <%= show.date %>
+    <% end %>
+  <% end %>
+</ul>
+
+Know something we don't?
+
+<%= link_to "Add show", new_artist_show_path(@artist) %>
+
+<br>
+<br>
+
 <%= link_to "Edit Artist", edit_artist_path %>

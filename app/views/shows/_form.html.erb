@@ -1,0 +1,28 @@
+<%= form_with model: [@artist, @show] do |form| %>
+  <div>
+    <%= form.label :venue %>
+
+    <br>
+
+    <%= form.text_field :venue %>
+
+    <br>
+
+    <%= form.label :city %>
+
+    <br>
+    <%= form.text_field :city %>
+  </div>
+  <br>
+  <div>
+    <%= form.label :date %>
+    <%= form.date_field :date %>
+    <br>
+  </div>
+
+  <br>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
