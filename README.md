@@ -1,2 +1,3 @@
 ## Tools used
-* devise...
+* devise
+* tailwind
